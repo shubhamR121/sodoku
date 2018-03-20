@@ -507,7 +507,7 @@ function loading()
       $(Id).val('');
  	}
 }
-function checkRC(first,last,inst,index,block)
+function checkRC(start,end,inst,index,block)
 {
 	var num=$(inst).val();
 	c=0;
@@ -531,12 +531,8 @@ function checkRC(first,last,inst,index,block)
 	if(index>=72&&index<=81)
 		Add=Add-9*8;
 	
-	if(index>=81&&index<=89)
-		Add=Add-9*9;
 	
-
-
-	for(i=first;i<last;i++)
+	for(i=start;i<end;i++)
 	{
 		if(Add==index)
 		{
@@ -551,7 +547,7 @@ function checkRC(first,last,inst,index,block)
 		Add=Add+9;
 	}
 
-	for(i=first;i<last;i++)
+	for(i=start;i<end;i++)
 	{
 		if(i==index)
 			continue;
@@ -564,14 +560,14 @@ function checkRC(first,last,inst,index,block)
 	}
 }
 	
-function checkBlock(first,last,inst,index,block){
+function checkBlock(start,end,inst,index,block){
 var num=$(inst).val();
 var v=block;
 
-	for (var k=first; k<last; k++) 
+	for (var k=start; k<end; k++) 
 	{ //for block
 		
-		if((k%3==0)&&(k>first))
+		if((k%3==0)&&(k>start))
 			v=v+6;
 
 		if(v==index)
