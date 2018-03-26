@@ -54,501 +54,501 @@ var Arr5=[8,6,0,0,2,0,0,0,0,
           ];
 
 var Arr6=[0,2,0,0,0,0,0,0,0,
-         0,0,0,6,0,0,0,0,3,
-         0,7,4,0,8,0,0,0,0,
-         0,0,0,0,0,3,8,0,2,
-         0,8,0,0,4,0,0,1,0,
-         6,0,0,5,0,0,0,0,0,
-         0,0,0,0,1,0,7,8,0,
-         5,0,0,0,0,9,0,0,0,
-         0,0,7,5,0,9,0,4,0
-         ];         
+          0,0,0,6,0,0,0,0,3,
+          0,7,4,0,8,0,0,0,0,
+          0,0,0,0,0,3,8,0,2,
+          0,8,0,0,4,0,0,1,0,
+          6,0,0,5,0,0,0,0,0,
+          0,0,0,0,1,0,7,8,0,
+          5,0,0,0,0,9,0,0,0,
+          0,0,7,5,0,9,0,4,0
+          ];         
 
 $(document).ready(function()
 {
   loading();
   $("#cell-0").keyup(function(){
-    checkRowColumn(0,9,this,0);
+    checkRow(0,9,this,0);
     checkColumn(0,72,this,0);
     checkBlock(0,9,this,0,0);
   });
   $("#cell-1").keyup(function(){
-    checkRowColumn(0,9,this,1);
+    checkRow(0,9,this,1);
     checkColumn(1,73,this,1);
     checkBlock(0,9,this,1,0);
   });
   $("#cell-2").keyup(function(){
-    checkRowColumn(0,9,this,2);
+    checkRow(0,9,this,2);
     checkColumn(2,74,this,2);
     checkBlock(0,9,this,2,0);
   });
 
   $("#cell-3").keyup(function(){
-    checkRowColumn(0,9,this,3);
+    checkRow(0,9,this,3);
     checkColumn(3,75,this,3);
     checkBlock(0,9,this,3,3);
   });
 
   $("#cell-4").keyup(function(){
-    checkRowColumn(0,9,this,4);
+    checkRow(0,9,this,4);
     checkColumn(4,76,this,4);
     checkBlock(0,9,this,4,3);
   });
   $("#cell-5").keyup(function(){
-    checkRowColumn(0,9,this,5);
+    checkRow(0,9,this,5);
     checkColumn(5,77,this,5);
     checkBlock(0,9,this,5,3);
   });
 
   $("#cell-6").keyup(function(){
-    checkRowColumn(0,9,this,6);
+    checkRow(0,9,this,6);
     checkColumn(6,78,this,6);
     checkBlock(0,9,this,6,6);
   });
 
   $("#cell-7").keyup(function(){
-    checkRowColumn(0,9,this,7);
+    checkRow(0,9,this,7);
     checkColumn(7,79,this,7);
     checkBlock(0,9,this,7,6);
   });
 
   $("#cell-8").keyup(function(){
-    checkRowColumn(0,9,this,8);
+    checkRow(0,9,this,8);
     checkColumn(8,80,this,8);
     checkBlock(0,9,this,8,6);
   });
 
    $("#cell-9").keyup(function(){
-    checkRowColumn(9,18,this,9);
+    checkRow(9,18,this,9);
     checkColumn(0,72,this,9);
     checkBlock(9,18,this,9,0);
   });
 
   $("#cell-10").keyup(function(){
-    checkRowColumn(9,18,this,10);
+    checkRow(9,18,this,10);
     checkColumn(1,73,this,10);
     checkBlock(9,18,this,10,0);
   });
 
   $("#cell-11").keyup(function(){
-    checkRowColumn(9,18,this,11);
+    checkRow(9,18,this,11);
     checkColumn(2,74,this,11);
     checkBlock(9,18,this,11,0);
   });
 
   $("#cell-12").keyup(function(){
-    checkRowColumn(9,18,this,12);
+    checkRow(9,18,this,12);
     checkColumn(3,75,this,12);
     checkBlock(9,18,this,12,3);
   });
 
   $("#cell-13").keyup(function(){
-    checkRowColumn(9,18,this,13);
+    checkRow(9,18,this,13);
     checkColumn(4,76,this,13);
     checkBlock(9,18,this,13,3);
   });
 
   $("#cell-14").keyup(function(){
-    checkRowColumn(9,18,this,14);
+    checkRow(9,18,this,14);
     checkColumn(5,77,this,14);
     checkBlock(9,18,this,14,3);
   });
 
   $("#cell-15").keyup(function(){
-    checkRowColumn(9,17,this,15);
+    checkRow(9,17,this,15);
     checkColumn(6,78,this,15);
     checkBlock(9,18,this,15,6);
   });
 
   $("#cell-16").keyup(function(){
-    checkRowColumn(9,18,this,16);
+    checkRow(9,18,this,16);
     checkColumn(7,79,this,16);
     checkBlock(9,18,this,16,6);
   });
 
   $("#cell-17").keyup(function(){
-    checkRowColumn(9,18,this,17);
+    checkRow(9,18,this,17);
     checkColumn(8,80,this,17);
     checkBlock(9,18,this,17,6);
   });
 
   $("#cell-18").keyup(function(){
-    checkRowColumn(18,27,this,18);
+    checkRow(18,27,this,18);
     checkColumn(0,72,this,18);
     checkBlock(18,27,this,18,0);
   });
 
   $("#cell-19").keyup(function(){
-    checkRowColumn(18,27,this,19);
+    checkRow(18,27,this,19);
     checkColumn(1,73,this,19);
     checkBlock(18,27,this,19,0);
   });
 
   $("#cell-20").keyup(function(){
-    checkRowColumn(18,27,this,20);
+    checkRow(18,27,this,20);
     checkColumn(2,74,this,20);
     checkBlock(18,27,this,20,0);
   });
 
   $("#cell-21").keyup(function(){
-    checkRowColumn(18,27,this,21);
+    checkRow(18,27,this,21);
     checkColumn(3,75,this,21);
     checkBlock(18,27,this,21,3);
   });
 
   $("#cell-22").keyup(function(){
-    checkRowColumn(18,27,this,22);
+    checkRow(18,27,this,22);
     checkColumn(4,76,this,22);
     checkBlock(18,27,this,22,3);
   });
 
   $("#cell-23").keyup(function(){
-    checkRC(18,27,this,23);
+    checkRow(18,27,this,23);
     checkColumn(5,77,this,23);
     checkBlock(18,27,this,23,3);
   });
 
   $("#cell-24").keyup(function(){
-    checkRowColumn(18,27,this,24);
+    checkRow(18,27,this,24);
     checkColumn(6,78,this,24);
     checkBlock(18,27,this,24,6);
   });
 
   $("#cell-25").keyup(function(){
-    checkRowColumn(18,27,this,25);
+    checkRow(18,27,this,25);
     checkColumn(7,79,this,25);
     checkBlock(18,27,this,25,6);
   });
 
   $("#cell-26").keyup(function(){
-    checkRowColumn(18,27,this,26);
+    checkRow(18,27,this,26);
    checkColumn(8,80,this,26);
    checkBlock(18,27,this,26,6);
 
   });
 
   $("#cell-27").keyup(function(){
-    checkRowColumn(27,36,this,27);
+    checkRow(27,36,this,27);
     checkColumn(0,72,this,27);
     checkBlock(27,36,this,27,27);
   });
 
   $("#cell-28").keyup(function(){
-    checkRowColumn(27,36,this,28);
+    checkRow(27,36,this,28);
     checkColumn(1,73,this,28);
     checkBlock(27,36,this,28,27);
   });
 
   $("#cell-29").keyup(function(){
-    checkRowColumn(27,36,this,29);
+    checkRow(27,36,this,29);
     checkColumn(2,74,this,29);
     checkBlock(27,36,this,29,27);
   });
 
   $("#cell-30").keyup(function(){
-    checkRowColumn(27,36,this,30);
+    checkRow(27,36,this,30);
     checkColumn(3,75,this,30);
     checkBlock(27,36,this,30,30);
   });
 
   $("#cell-31").keyup(function(){
-    checkRowColumn(27,36,this,31);
+    checkRow(27,36,this,31);
     checkColumn(4,76,this,31);
     checkBlock(27,36,this,31,30);
   });
 
   $("#cell-32").keyup(function(){
-    checkRowColumn(27,36,this,32);
+    checkRow(27,36,this,32);
     checkColumn(5,77,this,32);
     checkBlock(27,36,this,32,30);
   });
 
   $("#cell-33").keyup(function(){
-    checkRowColumn(27,36,this,33);
+    checkRow(27,36,this,33);
     checkColumn(6,78,this,33);
     checkBlock(27,36,this,33,33);
   });
 
   $("#cell-34").keyup(function(){
-    checkRowColumn(27,36,this,34);
+    checkRow(27,36,this,34);
     checkColumn(7,79,this,34);
     checkBlock(27,36,this,34,33);
   });
 
   $("#cell-35").keyup(function(){
-    checkRowColumn(27,36,this,35);
+    checkRow(27,36,this,35);
     checkColumn(8,80,this,35);
     checkBlock(27,36,this,35,33);
   });
 
   $("#cell-36").keyup(function(){
-    checkRowColumn(36,45,this,36);
+    checkRow(36,45,this,36);
     checkColumn(0,72,this,36);
     checkBlock(36,45,this,36,27);
   });
 
   $("#cell-37").keyup(function(){
-    checkRowColumn(36,45,this,37);
+    checkRow(36,45,this,37);
     checkColumn(1,73,this,37);
     checkBlock(36,45,this,37,27);
   });
 
   $("#cell-38").keyup(function(){
-    checkRowColumn(36,45,this,38);
+    checkRow(36,45,this,38);
     checkColumn(2,74,this,38);
     checkBlock(36,45,this,38,27);
   });
 
   $("#cell-39").keyup(function(){
-    checkRowColumn(36,45,this,39);
+    checkRow(36,45,this,39);
     checkColumn(3,75,this,39);
     checkBlock(36,45,this,39,30);
   });
 
     $("#cell-40").keyup(function(){
-    checkRowColumn(36,45,this,40);
+    checkRow(36,45,this,40);
     checkColumn(4,76,this,40);
     checkBlock(36,45,this,40,30);
   });
 
   $("#cell-41").keyup(function(){
-    checkRowColumn(36,45,this,40);
+    checkRow(36,45,this,40);
     checkColumn(5,77,this,41);
     checkBlock(36,45,this,40,30);
   });
 
   $("#cell-42").keyup(function(){
-    checkRowColumn(36,45,this,42);
+    checkRow(36,45,this,42);
     checkColumn(6,78,this,42);
     checkBlock(36,45,this,41,33);
   });
 
   $("#cell-43").keyup(function(){
-    checkRowColumn(36,45,this,43);
+    checkRow(36,45,this,43);
     checkColumn(7,79,this,43);
     checkBlock(36,45,this,43,33);
   });
 
   $("#cell-44").keyup(function(){
-    checkRowColumn(36,45,this,44);
+    checkRow(36,45,this,44);
     checkColumn(8,80,this,44);
     checkBlock(36,45,this,44,33);
   });
 
   $("#cell-45").keyup(function(){
-    checkRowColumn(45,54,this,45);
+    checkRow(45,54,this,45);
     checkColumn(0,72,this,45);
     checkBlock(45,54,this,45,27);
   });
 
   $("#cell-46").keyup(function(){
-    checkRowColumn(45,54,this,46);
+    checkRow(45,54,this,46);
     checkColumn(1,73,this,46);
     checkBlock(45,54,this,46,27);
   });
 
   $("#cell-47").keyup(function(){
-    checkRowColumn(45,54,this,47);
+    checkRow(45,54,this,47);
     checkColumn(2,74,this,47);
     checkBlock(45,54,this,47,27);
   });
 
   $("#cell-48").keyup(function(){
-    checkRowColumn(45,54,this,48);
+    checkRow(45,54,this,48);
     checkColumn(3,75,this,48);
     checkBlock(45,54,this,48,30);
   });
 
   $("#cell-49").keyup(function(){
-    checkRowColumn(45,54,this,49);
+    checkRow(45,54,this,49);
     checkColumn(4,76,this,49);
     checkBlock(45,54,this,49,30);
   });
     
   $("#cell-50").keyup(function(){
-    checkRowColumn(45,54,this,50);
+    checkRow(45,54,this,50);
     checkColumn(5,77,this,50);
     checkBlock(45,54,this,50,30);
   });
 
   $("#cell-51").keyup(function(){
-    checkRowColumn(45,54,this,51);
+    checkRow(45,54,this,51);
     checkColumn(6,78,this,51);
     checkBlock(45,54,this,51,33);
   });
 
   $("#cell-52").keyup(function(){
-    checkRowColumn(45,54,this,52);
+    checkRow(45,54,this,52);
     checkColumn(7,79,this,52);
     checkBlock(45,54,this,52,33);
   });
 
   $("#cell-53").keyup(function(){
-    checkRowColumn(45,54,this,53);
+    checkRow(45,54,this,53);
     checkColumn(8,80,this,53);
     checkBlock(45,54,this,53,33);
   });
     
   $("#cell-54").keyup(function(){
-    checkRowColumn(54,63,this,54);
+    checkRow(54,63,this,54);
     checkColumn(0,72,this,54);
     checkBlock(54,63,this,54,54);
   });
 
   $("#cell-55").keyup(function(){
-    checkRowColumn(54,62,this,55);
+    checkRow(54,62,this,55);
     checkColumn(1,73,this,55);
     checkBlock(54,62,this,55,54);
   });
 
   $("#cell-56").keyup(function(){
-    checkRowColumn(54,63,this,56);
+    checkRow(54,63,this,56);
     checkColumn(2,74,this,56);
     checkBlock(54,63,this,56,54);
   });
 
   $("#cell-57").keyup(function(){
-    checkRowColumn(54,63,this,57);
+    checkRow(54,63,this,57);
     checkColumn(3,75,this,57);
     checkBlock(54,63,this,57,57);
   });
 
   $("#cell-58").keyup(function(){
-    checkRowColumn(54,63,this,58);
+    checkRow(54,63,this,58);
     checkColumn(4,76,this,58);
     checkBlock(54,63,this,58,57);
   });
 
   $("#cell-59").keyup(function(){
-    checkRowColumn(54,63,this,59);
+    checkRow(54,63,this,59);
     checkColumn(5,77,this,59);
     checkBlock(54,63,this,59,57);
   });
 
   $("#cell-60").keyup(function(){
-    checkRowColumn(54,63,this,60);
+    checkRow(54,63,this,60);
     checkColumn(6,78,this,60);
     checkBlock(54,63,this,60,60);
   });
 
   $("#cell-61").keyup(function(){
-    checkRowColumn(54,63,this,61);
+    checkRow(54,63,this,61);
     checkColumn(7,79,this,61);
     checkBlock(54,63,this,61,60);
   });
 
   $("#cell-62").keyup(function(){
-    checkRowColumn(54,63,this,62);
+    checkRow(54,63,this,62);
     checkColumn(8,80,this,62);
     checkBlock(54,63,this,62,60);
   });
 
   $("#cell-63").keyup(function(){
-    checkRowColumn(63,72,this,63);
+    checkRow(63,72,this,63);
     checkColumn(0,72,this,63);
     checkBlock(63,72,this,63,54);
   });
 
   $("#cell-64").keyup(function(){
-    checkRowColumn(63,72,this,64);
+    checkRow(63,72,this,64);
     checkColumn(1,73,this,64);
     checkBlock(63,72,this,64,54);
   });
 
   $("#cell-65").keyup(function(){
-    checkRowColumn(63,72,this,65);
+    checkRow(63,72,this,65);
     checkColumn(2,74,this,65);
     checkBlock(63,72,this,65,54);
   });
 
 
   $("#cell-66").keyup(function(){
-    checkRowColumn(63,72,this,66);
+    checkRow(63,72,this,66);
     checkColumn(3,75,this,66);
     checkBlock(63,72,this,66,57);
   });
 
   $("#cell-67").keyup(function(){
-    checkRowColumn(63,72,this,67);
+    checkRow(63,72,this,67);
     checkColumn(4,76,this,67);
     checkBlock(63,72,this,67,57);
   });
 
   $("#cell-68").keyup(function(){
-    checkRowColumn(63,72,this,68);
+    checkRow(63,72,this,68);
     checkColumn(5,77,this,68);
     checkBlock(63,72,this,68,57);
   });
 
   $("#cell-69").keyup(function(){
-    checkRowColumn(63,72,this,69);
+    checkRow(63,72,this,69);
     checkColumn(6,78,this,69);
     checkBlock(63,72,this,69,60);
   });
 
   $("#cell-70").keyup(function(){
-    checkRowColumn(63,71,this,70);
+    checkRow(63,71,this,70);
     checkColumn(7,79,this,70);
     checkBlock(63,71,this,70,60);
   });
 
   $("#cell-71").keyup(function(){
-    checkRowColumn(63,72,this,71);
+    checkRow(63,72,this,71);
     checkColumn(8,80,this,71);
     checkBlock(63,72,this,71,60);
   });
 
   $("#cell-72").keyup(function(){
-    checkRowColumn(72,81,this,72);
+    checkRow(72,81,this,72);
     checkColumn(0,72,this,72);
     checkBlock(72,81,this,72,54);
   });
 
   $("#cell-73").keyup(function(){
-    checkRowColumn(72,81,this,73);
+    checkRow(72,81,this,73);
     checkColumn(1,73,this,73);
     checkBlock(0,81,this,73,54);
   });
 
   $("#cell-74").keyup(function(){
-    checkRowColumn(72,81,this,74);
+    checkRow(72,81,this,74);
     checkColumn(2,74,this,74);
     checkBlock(72,81,this,74,54);
   });
 
   $("#cell-75").keyup(function(){
-    checkRowColumn(72,81,this,75);
+    checkRow(72,81,this,75);
     checkColumn(3,75,this,75);
     checkBlock(72,81,this,75,57);
   });
 
   $("#cell-76").keyup(function(){
-    checkRowColumn(72,81,this,76);
+    checkRow(72,81,this,76);
     checkColumn(4,76,this,76);
     checkBlock(72,81,this,76,57);
   });
 
   $("#cell-77").keyup(function(){
-    checkRowColumn(72,81,this,77);
+    checkRow(72,81,this,77);
     checkColumn(5,77,this,77);
     checkBlock(72,81,this,77,57);
   });
 
   $("#cell-78").keyup(function(){
-    checkRowColumn(72,81,this,78);
+    checkRow(72,81,this,78);
     checkColumn(6,78,this,78);
     checkBlock(72,81,this,78,60);
   });
 
   $("#cell-79").keyup(function(){
-    checkRowColumn(72,81,this,79);
+    checkRow(72,81,this,79);
     checkColumn(7,79,this,79);
     checkBlock(72,81,this,79,60);
   });
 
   $("#cell-80").keyup(function(){
-    checkRowColumn(72,81,this,80);
-    checkC(8,80,this,80);
+    checkRow(72,81,this,80);
+    checkColumn(8,80,this,80);
     checkBlock(72,81,this,80,60);
   });
 
@@ -558,18 +558,18 @@ function loading()//for dynamic
   Num=Math.floor(Math.random() * (6 - 1 + 1) ) + 1;
   switch(Num)
   {
-  case 1:dupliArr=[].concat(Arr);
-    break;
-  case 2:dupliArr=[].concat(Arr2);
-    break;
-  case 3:dupliArr=[].concat(Arr3);
-    break;
-  case 4:dupliArr=[].concat(Arr4);
-    break;
-  case 5:dupliArr=[].concat(Arr5);
-    break;
-  case 6:dupliArr=[].concat(Arr6);
-    break;
+  	case 1:dupliArr=[].concat(Arr);
+   		break;
+  	case 2:dupliArr=[].concat(Arr2);
+   		break;
+ 		case 3:dupliArr=[].concat(Arr3);
+  	  break;
+ 	 	case 4:dupliArr=[].concat(Arr4);
+   	 	break;
+ 	 	case 5:dupliArr=[].concat(Arr5);
+    	break;
+  	case 6:dupliArr=[].concat(Arr6);
+   		break;
   }
   for (var i = 0; i<81; i++) 
   {
@@ -585,22 +585,26 @@ function loading()//for dynamic
 }
 
 var flag=0,flag1,add=0;
-function checkRowColumn(f,l,inst,loc)//for row
+function checkRow(f,l,inst,loc)//for row
 {
   var n=$(inst).val();
   dupliArr[loc]=n;
   var i;
-
-  for(i=f;i<l;i++)
-  {
-    if(i==loc)
-      continue;
-    if(dupliArr[i]==n)
-    {
-      flag=1;
-      break;
-    }
-  }
+	if(n>0 && n<10)
+	{	
+  	for(i=f;i<l;i++)
+  	{
+    	if(i==loc)
+      	continue;
+    	if(dupliArr[i]==n)
+    	{
+      	flag=1;
+      	break;
+    	}
+  	}
+ }
+ else
+ 		$(inst).val('');
 }
 function checkColumn(f,l,inst,loc)//for column
 {
@@ -624,8 +628,7 @@ function checkBlock(start,end,inst,index,block)//for block
   var v=block;
 
   for (var k=start; k<end; k++) 
-  { 
-        
+  {     
     if((k%3==0)&&(k>start))
       v=v+6;
 
@@ -637,16 +640,16 @@ function checkBlock(start,end,inst,index,block)//for block
     else
     {       
       if(num==dupliArr[v++])  
-      flag=1;    
+      	flag=1;    
     }       
   }
   if(flag==1)
-    {
-        $(inst).css({'color':'red'});
-         flag=0;
-    }
-    else
-        $(inst).css({'color':'black'});
+  {
+    $(inst).css({'color':'red'});
+    flag=0;
+  }
+  else
+    $(inst).css({'color':'black'});
     
 }
 });
