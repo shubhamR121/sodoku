@@ -559,17 +559,17 @@ function loading()//for dynamic
   switch(Num)
   {
   	case 1:dupliArr=[].concat(Arr);
-   		break;
+  		break;
   	case 2:dupliArr=[].concat(Arr2);
-   		break;
+  		break;
  		case 3:dupliArr=[].concat(Arr3);
-  	  break;
- 	 	case 4:dupliArr=[].concat(Arr4);
-   	 	break;
- 	 	case 5:dupliArr=[].concat(Arr5);
-    	break;
+  		break;
+ 		case 4:dupliArr=[].concat(Arr4);
+  		break;
+ 		case 5:dupliArr=[].concat(Arr5);
+  		break;
   	case 6:dupliArr=[].concat(Arr6);
-   		break;
+  		break;
   }
   for (var i = 0; i<81; i++) 
   {
@@ -592,16 +592,16 @@ function checkRow(f,l,inst,loc)//for row
   var i;
 	if(n>0 && n<10)
 	{	
-  	for(i=f;i<l;i++)
-  	{
-    	if(i==loc)
-      	continue;
-    	if(dupliArr[i]==n)
-    	{
-      	flag=1;
-      	break;
-    	}
-  	}
+		for(i=f;i<l;i++)
+		{
+			if(i==loc)
+				continue;
+			if(dupliArr[i]==n)
+			{
+				flag=1;
+				break;
+			}
+		}
  }
  else
  		$(inst).val('');
@@ -614,7 +614,7 @@ function checkColumn(f,l,inst,loc)//for column
   for(i=f;i<=l;i=i+9)
   {
     if(i==loc)
-      continue;
+    	continue;
     if(dupliArr[i]==n)
     {
       flag=1;
